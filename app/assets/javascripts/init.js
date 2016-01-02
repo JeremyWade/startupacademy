@@ -7,7 +7,7 @@
 //
 /* ================================================*/
 
-$(document).ready(function(){
+$(document).on('page:load', function() {
 
     if ($('body').hasClass('has-home-slider')) {
       //SETUP VARS

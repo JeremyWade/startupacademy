@@ -7,7 +7,13 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="has-home-slider">
+	<div class="preloader">
+		<div class="preloader-img">
+			<%= image_tag('logo.png', class: 'fade-down', alt: 'logo') %>
+		</div>
+	</div>
+	<%= render 'layouts/blogs' %>
 	<%= render 'layouts/header' %>
 <%= yield %>
 
