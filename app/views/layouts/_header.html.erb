@@ -1,0 +1,33 @@
+<!-- Navigation -->
+    <nav class="navbar yamm navbar-default" role="navigation" id="main-navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+             <%= link_to "Home", root_path %>
+                <a class="navbar-brand" href="#"><img src="assets/img/Logo1.png" alt="Logo" /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="main-navigation-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">About <span class="caret"><i class="pe-7s-angle-down"></i></span></a>
+          				<ul class="dropdown-menu" role="menu">
+				            <li><%= link_to "About", about_path %>About</li>
+          				</ul>
+        			</li>
+        			<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Blog<span class="caret"><i class="pe-7s-angle-down"></i></span></a>
+          				<ul class="dropdown-menu" role="menu">
+				            <li><a href="http://startupacademy.jsie.in/topics/week1/" target="_blank">A Great Startup Idea</a></li>
+                            <li><a href="http://startupacademy.jsie.in/topics/week2/" target="_blank">Finding Cofounders</a></li>
+				            <li><a href="http://startupacademy.jsie.in/topics/week3/" target="_blank" >Business Model Canvas</a></li>
+          				</ul>
+        			</li>
+          				</ul>
+        			</li>
+      			</ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
