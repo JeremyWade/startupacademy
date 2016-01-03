@@ -15,6 +15,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # For bootstrap styling
 gem 'bootstrap-sass'
 
+# For running jquery library
+gem 'sprockets', '~> 3.5', '>= 3.5.2'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '~> 4.0', '>= 4.0.5'
 
@@ -23,6 +26,9 @@ gem 'jquery-rails', '~> 4.0', '>= 4.0.5'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+
+gem 'jquery-turbolinks'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.

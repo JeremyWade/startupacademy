@@ -1,32 +1,152 @@
-<!-- Navigation -->
+ <!-- Navigation -->
     <nav class="navbar yamm navbar-default" role="navigation" id="main-navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-             <a href="#">
-             <%= image_tag('logo1.png', class: 'navbar-brand', alt: 'startupacademy') %>
-                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <%= image_tag('logo1.png', class: 'navbar-brand', alt: 'logo') %>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="main-navigation-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-          				<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">About <span class="caret"><i class="pe-7s-angle-down"></i></span></a>
-          				<ul class="dropdown-menu" role="menu">
-				            <li><%= link_to "About", about_path %>About</li>
-          				</ul>
-        			</li>
-        			<li class="dropdown">
-          				<a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Blog<span class="caret"><i class="pe-7s-angle-down"></i></span></a>
-          				<ul class="dropdown-menu" role="menu">
-				            <li><a href="http://startupacademy.jsie.in/topics/week1/" target="_blank">A Great Startup Idea</a></li>
-                            <li><a href="http://startupacademy.jsie.in/topics/week2/" target="_blank">Finding Cofounders</a></li>
-				            <li><a href="http://startupacademy.jsie.in/topics/week3/" target="_blank" >Business Model Canvas</a></li>
-          				</ul>
-        			</li>
-          				</ul>
-        			</li>
-      			</ul>
+        <ul class="nav navbar-nav navbar-right">
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="single-post.html">Single Post</a></li>
+                            <li><a href="single-post-sidebar-alt.html">Single Post Alt Sidebar</a></li>
+                    <li><a href="single-post-video.html">Single Post Video</a></li>
+                    <li><a href="single-post-gallery.html">Single Post Gallery</a></li>
+                    <li><a href="single-audio.html">Single Audio</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">ABOUT</a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="author.html">Author</a></li>
+                    <li><a href="category-archive.html">Category Archive</a></li>
+                    <li><a href="category-archive-sidebar.html">Category Archive Sidebar</a></li>
+                    <li><a href="page.html">Page</a></li>
+                    <li><a href="page-sidebar.html">Page Sidebar</a></li>
+                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                    <li><a href="404.html">404</a></li>
+                  </ul>
+              </li>
+              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">BLOGS</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                          <div class="yamm-content">
+                        <div class="row">
+                            <div class="col-md-4">
+                              <div class="row">
+                                <div class="col-md-6">
+                      <ul class="yamm-list list-unstyled">
+                                    <li>
+                                      <p><strong>New Topics</strong></p>
+                                    </li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                  </ul>
+                                </div>
+                                <div class="col-md-6">
+                      <ul class="yamm-list list-unstyled">
+                                    <li>
+                                      <p><strong>Popular Posts</strong></p>
+                                    </li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                    <li><a href="#">List Item</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                        </div>
+                          <div class="col-sm-8">  
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-4 blog-item">
+                              <div class="item-inner">
+                                  <div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
+                                    <img class="img-responsive" src="assets/img/posts/img_35.gif" alt="">            
+                                    <div class="overlay">
+                                      <h4>Hot Band</h4>
+                                      <div class="overlay-metas"> 
+                                        <ul class="list-inline">
+                                          <li>
+                                <a class="overlay-share tooltip-me" href="http://twitter.com/share?url=_URL_amp;text=_ADDITIONAL_TEXT_amp;via=TWITTER_NAME" data-toggle="tooltip" data-placement="top" title="Share On Twitter"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                <a class="overlay-share tooltip-me" href="https://apis.google.com/_/+1/fastbutton?usegapi=1amp;size=largeamp;hl=enamp;url=_URL_" data-toggle="tooltip" data-placement="top" title="Share On Google"><i class="fa fa-google-plus"></i></a>
+                              </li>
+                              <li>
+                                            <a class="overlay-share tooltip-me" href="http://www.facebook.com/plugins/like.php?href=_URL_" data-toggle="tooltip" data-placement="top" title="Share On Facebook"><i class="fa fa-facebook"></i></a>
+                                          </li>
+                            </ul>
+                                          <a href="#">Read More</a>       
+                                        </div>      
+                                    </div>           
+                                </div> 
+                            </div>
+                                <div class="col-xs-6 col-sm-4 blog-item">
+                              <div class="item-inner">
+                                  <div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
+                                    <img class="img-responsive" src="assets/img/posts/img_15.gif" alt="">            
+                                    <div class="overlay">
+                                      <h4>Related Item</h4>
+                                      <div class="overlay-metas"> 
+                                        <ul class="list-inline">
+                                          <li>
+                                <a class="overlay-share" href="http://twitter.com/share?url=_URL_amp;text=_ADDITIONAL_TEXT_amp;via=TWITTER_NAME" data-toggle="tooltip" data-placement="top" title="Share On Twitter"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                <a class="overlay-share" href="https://apis.google.com/_/+1/fastbutton?usegapi=1amp;size=largeamp;hl=enamp;url=_URL_" data-toggle="tooltip" data-placement="top" title="Share On Google"><i class="fa fa-google-plus"></i></a>
+                              </li>
+                              <li>
+                                            <a class="overlay-share" href="http://www.facebook.com/plugins/like.php?href=_URL_" data-toggle="tooltip" data-placement="top" title="Share On Facebook"><i class="fa fa-facebook"></i></a>
+                                          </li>
+                            </ul>
+                                          <a href="#">Read More</a>       
+                                        </div>      
+                                    </div>           
+                                </div> 
+                            </div>
+                                <div class="col-xs-6 col-sm-4 blog-item">
+                              <div class="item-inner">
+                                  <div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
+                                    <img class="img-responsive" src="assets/img/posts/img_19.gif" alt="">            
+                                    <div class="overlay">
+                                      <h4>Related Item</h4>
+                                      <div class="overlay-metas"> 
+                                        <ul class="list-inline">
+                                          <li>
+                                <a class="overlay-share" href="http://twitter.com/share?url=_URL_amp;text=_ADDITIONAL_TEXT_amp;via=TWITTER_NAME" data-toggle="tooltip" data-placement="top" title="Share On Twitter"><i class="fa fa-twitter"></i></a>
+                              </li>
+                              <li>
+                                <a class="overlay-share" href="https://apis.google.com/_/+1/fastbutton?usegapi=1amp;size=largeamp;hl=enamp;url=_URL_" data-toggle="tooltip" data-placement="top" title="Share On Google"><i class="fa fa-google-plus"></i></a>
+                              </li>
+                              <li>
+                                            <a class="overlay-share" href="http://www.facebook.com/plugins/like.php?href=_URL_" data-toggle="tooltip" data-placement="top" title="Share On Facebook"><i class="fa fa-facebook"></i></a>
+                                          </li>
+                            </ul>
+                                          <a href="#">Read More</a>       
+                                        </div>      
+                                    </div>           
+                                </div> 
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>

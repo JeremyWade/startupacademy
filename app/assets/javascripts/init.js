@@ -7,7 +7,7 @@
 //
 /* ================================================*/
 
-$(document).on('page:load', function() {
+$(document).ready(function(){
 
     if ($('body').hasClass('has-home-slider')) {
       //SETUP VARS
@@ -103,9 +103,9 @@ $(document).on('page:load', function() {
 });
 
 jQuery(function($) {
-  $(document).ready( function() {
+$(document).ready(function(){
     //enabling stickUp on the '.navbar-wrapper' class
-    $('#main-navigation').stickUp();
+    $('.navbar yamm navbar-default').stickUp();
   });
 });
 
@@ -245,6 +245,41 @@ jQuery(document).ready(function($){
 /*-----------------------------------------------------------------------------------*/
 /*  CUSTOM JS ERE
 /*-----------------------------------------------------------------------------------*/
+  $ ->
+  loadFacebookSDK()
+  bindFacebookEvents() unless window.fbEventsBound
+
+bindFacebookEvents = ->
+  $(document)
+    .on('page:fetch', saveFacebookRoot)
+    .on('page:change', restoreFacebookRoot)
+    .on('page:load', ->
+      FB?.XFBML.parse()
+    )
+  @fbEventsBound = true
+
+saveFacebookRoot = ->
+  if $('#fb-root').length
+    @fbRoot = $('#fb-root').detach()
+
+restoreFacebookRoot = ->
+  if @fbRoot?
+    if $('#fb-root').length
+      $('#fb-root').replaceWith @fbRoot
+    else
+      $('body').append @fbRoot
+
+loadFacebookSDK = ->
+  window.fbAsyncInit = initializeFacebookSDK
+  $.getScript("//connect.facebook.net/en_US/sdk.js")
+
+initializeFacebookSDK = ->
+  FB.init
+    appId  : '1528088910840372'
+    status : true
+    cookie : true
+    xfbml  : true
+
 jQuery(document).ready(function($){
   'use strict';
 
