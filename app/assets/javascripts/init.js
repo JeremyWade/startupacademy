@@ -49,28 +49,6 @@ $(document).ready(function(){
       }, 500);
     }); 
 
-    //CAROUSEL
-    $('.carousel').carousel({
-        interval: 8000
-    });
-
-    $('.owl-carousel').owlCarousel({
-      navigation: true,
-      navigationText: [
-      "<span class='icon-arrowl'></span>",
-      "<span class='icon-arrowr'></span>"
-      ],
-      pagination: false,
-      autoPlay: 8000
-    });
-
-    $('.carousel-indicators li').click(function() {
-        var li = $(this);
-        var alreadySelected = li.hasClass('active');
-        $('.carousel-indicators li').removeClass('active');
-        li.addClass('active');
-    });
-
     //ADD SLIDEDOWN ANIMATION TO DROPDOWN
     $('.navbar-default .navbar-nav > li.dropdown').hover(function() {
         $('ul.dropdown-menu', this).stop(true, true).slideDown('fast');
@@ -245,40 +223,6 @@ jQuery(document).ready(function($){
 /*-----------------------------------------------------------------------------------*/
 /*  CUSTOM JS ERE
 /*-----------------------------------------------------------------------------------*/
-  $ ->
-  loadFacebookSDK()
-  bindFacebookEvents() unless window.fbEventsBound
-
-bindFacebookEvents = ->
-  $(document)
-    .on('page:fetch', saveFacebookRoot)
-    .on('page:change', restoreFacebookRoot)
-    .on('page:load', ->
-      FB?.XFBML.parse()
-    )
-  @fbEventsBound = true
-
-saveFacebookRoot = ->
-  if $('#fb-root').length
-    @fbRoot = $('#fb-root').detach()
-
-restoreFacebookRoot = ->
-  if @fbRoot?
-    if $('#fb-root').length
-      $('#fb-root').replaceWith @fbRoot
-    else
-      $('body').append @fbRoot
-
-loadFacebookSDK = ->
-  window.fbAsyncInit = initializeFacebookSDK
-  $.getScript("//connect.facebook.net/en_US/sdk.js")
-
-initializeFacebookSDK = ->
-  FB.init
-    appId  : '1528088910840372'
-    status : true
-    cookie : true
-    xfbml  : true
 
 jQuery(document).ready(function($){
   'use strict';
