@@ -4,8 +4,9 @@
 				<div class="full-header">
 	                <div class="blog-item nopadding-lr col-md-3 fade-up">
 		                <div class="item-inner">
-		                	<a href="single-post.html">
+		                	<%= link_to greatidea_path do %>
 		                    	<%= image_tag('greatidea.jpg', class: 'img-responsive', alt: 'great idea') %>
+		                    	<% end %>
 		                    	<div class="header-lg-overlay">
 		                    		<h3><strong>Great</strong>Idea</h3>
 		                    	</div>
@@ -37,9 +38,9 @@
 	                <div class="blog-item nopadding-lr col-md-3 fade-up">
 		                <div class="item-inner">
 		                	<a href="single-post.html">
-		                    	<img class="img-responsive" src="http://unsplash.it/360/310?random=6" alt="">	
+		                    	<%= image_tag('traction.jpg', class: 'img-responsive', alt: 'Traction') %>	
 		                    	<div class="header-lg-overlay">
-		                    		<h3><strong>Getting</strong> Traction</h3>
+		                    		<h3><strong>Getting</strong>Traction</h3>
 		                    		
 		                    	</div>
 	                    	</a>                               
@@ -48,9 +49,9 @@
 	                <div class="blog-item nopadding-lr col-md-3 fade-up">
 		                <div class="item-inner">
 	                		<a href="single-post.html">
-		                    	<img class="img-responsive" src="http://unsplash.it/360/310?random=75" alt="">
+		                    	<%= image_tag('funds.jpg', class: 'img-responsive', alt: 'Fundraising') %>
 		                    	<div class="header-lg-overlay">
-		                    		<h3><strong>Fund</strong> Raising</h3>
+		                    		<h3><strong>Fund</strong>Raising</h3>
 		                    		
 		                    	</div>
 	                    	</a>                              
