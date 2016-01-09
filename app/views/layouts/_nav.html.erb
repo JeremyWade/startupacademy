@@ -1,5 +1,5 @@
- <!-- Navigation -->
-    <nav class="navbar yamm navbar-default" role="navigation" id="main-navigation">
+<!-- Navigation -->
+    <nav class="navbar yamm navbar-default navbar-fixed-top" role="navigation" id="main-navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -9,10 +9,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <%= link_to root_path do %>
+                <%= link_to root_path do %>
                <%= image_tag('logo1.png', class: 'navbar-brand', alt: 'logo') %>
                <% end %>
-            </div>
+              </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="main-navigation-collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -24,19 +24,11 @@
                     <li><a href="single-audio.html">Single Audio</a></li>
                   </ul>
               </li>
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">ABOUT</a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="author.html">Author</a></li>
-                    <li><a href="category-archive.html">Category Archive</a></li>
-                    <li><a href="category-archive-sidebar.html">Category Archive Sidebar</a></li>
-                    <li><a href="page.html">Page</a></li>
-                    <li><a href="page-sidebar.html">Page Sidebar</a></li>
-                    <li><a href="coming-soon.html">Coming Soon</a></li>
-                    <li><a href="404.html">404</a></li>
-                  </ul>
+              <li>
+                <%= link_to "ABOUT", about_path, :class => "btn btn-small btn-success" =%>
               </li>
-              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">BLOGS</a>
+              <li class="dropdown yamm-fw">
+               <%= link_to "BLOGS", "#", :"data-hover" => "dropdown", :"data-toggle" => "dropdown", :class => "btn btn-small btn-success" =%>
                     <ul class="dropdown-menu">
                       <li>
                           <div class="yamm-content">

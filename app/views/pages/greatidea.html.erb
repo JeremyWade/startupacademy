@@ -1,29 +1,25 @@
-<%= render 'layouts/header' %>
+<%= render 'layouts/nav' %>
 <!-- Main Content
 	================================================== -->
+    <div id="single-post">
     <div class="content-section">        
-
 		<section>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">
-						<img class="img-responsive" src="assets/img/greatidea.jpg" alt="Great Startup Idea">	
+						<%= image_tag('greatidea-big.jpg', class: 'img-responsive', alt: 'Great Startup Idea') %>	
 						<div class="single-post-heading gap">
 				        	<div class="centered fade-up section-heading">
 				        		<p>
-				        		 
-				        		<span class="category">Startup Academy</span> / 
-				        		<span class="date">Week 2</span>
-				        		<a href="http://startupacademy.jsie.in/topics/week2/"> 
-				        		<span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"</span></a>
+				        		<span class="category">A Great Startup Idea</span>
 				        		</p>
-				                <h2 class="main-title"><strong>A Great Startup Idea</strong></h2>
 				                <span class="author">Week 1</span>
-				                
 				            </div> 
 						</div>
+						<div class="charter">
 						<div class="row gap">
 							<div class="col-md-12 fade-up single-post-content">
+								<br>
 								<p><strong>“By far the most common mistake startups make is to solve problems no one has.” - Paul Graham</strong> </p>
 
 								</p>A great way to think about startup ideas is to think about problems. Is your startup idea solving a worthwhile problem? How would you verify the problem exists? Problems can arise in many forms, as pain points, unmet needs, or frustrations. Starting with the problem is key to avoid wasting time working on a solution in search for a problem.  </p>
@@ -44,6 +40,7 @@
 								<p>While an idea is extremely important, it is vital to keep in mind that the execution and other aspects of a startup are more important. Paul Graham once said “What matters is not ideas, but the people who have them. Good people can fix bad ideas, but good ideas can’t save bad people.”  </p>
 
 							</div>
+						</div>
 						<div class="fb-share-button" data-href="http://startupacademy.jsie.in/topics/week1/" data-layout="button_count"></div>
 						</div>
 					</div>
@@ -164,6 +161,7 @@
 	                </div>
                 </div>
 			</div>
+		</div>
 		</section>
 
     </div>

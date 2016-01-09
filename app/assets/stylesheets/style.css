@@ -61,7 +61,7 @@ b, strong {
 }
 
 .gap {
-    margin: 40px;
+    margin: 0px;
 }
 
 .centered {
@@ -379,7 +379,7 @@ b, strong {
 }
 
 #main-navigation .navbar-nav>li>a {
-    color: #F36C63;
+    color: white;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
@@ -949,11 +949,16 @@ b, strong {
     min-height: 600px;
 }
 
+#single-post {
+    padding-top: 78px;
+}
+
 #single-slider .single-slider-post-heading {
     background-color: rgba(63, 85, 97, 0.9);
-    padding: 25px 20px;
+    padding: 120px 120px;
     border-bottom: 5px solid #F36C63;
     text-shadow: none;
+    padding-bottom: 20px;
 }
 
 #single-slider .single-slider-post-heading .section-heading, #single-slider .single-slider-post-heading .section-heading p {
@@ -1105,6 +1110,7 @@ b, strong {
     background-color: #3F5561;
     color: #f3f3f3;
     margin-bottom: 45px;
+    width: 375px;
 }
 
 #single-sidebar-inner-alt {
@@ -2497,4 +2503,13 @@ z-index: 1;
         float: none;
         margin-bottom: 10px;
     }
+}
+
+.charter {
+  font-family: "Bitstream Charter",Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.9;
+
+
 }

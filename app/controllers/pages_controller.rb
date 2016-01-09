@@ -5,4 +5,13 @@ class PagesController < ApplicationController
   end 
   def greatidea 
   end 
+  def cofounders 
+  end 
+  def businessmodel 
+  end 
+  def gettingtraction 
+  end
+  def fundraising 
+  end
+
 end

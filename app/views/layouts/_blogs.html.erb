@@ -15,8 +15,9 @@
 	                </div>
 	                <div class="blog-item nopadding-lr col-md-3 fade-up">
 		                <div class="item-inner">
-		               		<a href="single-post.html">
-		               			<%= image_tag('cofounder.jpg', class: 'img-responsive', alt: 'Cofounders') %>
+		               		<%= link_to cofounders_path do %>
+		                    	<%= image_tag('cofounder.jpg', class: 'img-responsive', alt: 'Cofounders') %>
+		                    	<% end %>
 		                    	<div class="header-lg-overlay">
 		                    		<h3><strong>Co</strong>founders</h3>
 		                    	</div>
@@ -25,8 +26,9 @@
 	                </div>
 	                <div class="blog-item nopadding-lr col-md-3 fade-up">
 		                <div class="item-inner">
-			                <a href="single-post.html">
+			                <%= link_to businessmodel_path do %>
 			                	<%= image_tag('bmc.jpg', class: 'img-responsive', alt: 'Business Model Canvas') %>
+			                	<% end %>
 		                    	<div class="header-lg-overlay">
 		                    		<h3><strong>Business</strong>Model</h3>
 		                    		
@@ -36,8 +38,9 @@
 	                </div>
 	                <div class="blog-item nopadding-lr col-md-3 fade-up">
 		                <div class="item-inner">
-		                	<a href="single-post.html">
+		                	<%= link_to gettingtraction_path do %>
 		                    	<%= image_tag('traction.jpg', class: 'img-responsive', alt: 'Traction') %>	
+		                    	<% end %>
 		                    	<div class="header-lg-overlay">
 		                    		<h3><strong>Getting</strong>Traction</h3>
 		                    		
@@ -47,8 +50,9 @@
 	                </div>
 	                <div class="blog-item nopadding-lr col-md-3 fade-up">
 		                <div class="item-inner">
-	                		<a href="single-post.html">
+	                		<%= link_to fundraising_path do %>
 		                    	<%= image_tag('funds.jpg', class: 'img-responsive', alt: 'Fundraising') %>
+		                    	<% end %>
 		                    	<div class="header-lg-overlay">
 		                    		<h3><strong>Fund</strong>Raising</h3>
 		                    		
