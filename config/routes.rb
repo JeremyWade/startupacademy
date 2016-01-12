@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root "pages#home"
 
-  get "about" => "pages#about"
   get "greatidea" => "pages#greatidea"
   get "cofounders" => "pages#cofounders"
   get "businessmodel" => "pages#businessmodel"
