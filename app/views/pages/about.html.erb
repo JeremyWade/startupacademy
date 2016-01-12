@@ -1,25 +1,12 @@
 <%= render 'layouts/nav' %>
 <!-- MAIN SLIDER -->
 	<div id="single-slider">
-		<script type="text/javascript">
-			$(document).ready(function(){
-			  	jQuery('#single-slider').backstretch([
-			      "http://unsplash.it/1200/400?random=1",
-			    ], {duration: 8000, fade: 500});
-		    });
-		</script>
-		<div class="single-slider-post-heading">		
-			<div class="container">
-	        	<div class="centered gap fade-down section-heading">
-	        		<p><span class="author">Danny Jones</span> / <span class="category"><a href="#">Fashion</a></span> / <span class="date">22.08.2014</span></p>
-	                <h2 class="main-title"><strong>Single Review Full Width</strong></h2>
-	                <p class="small">3 <span>Comments</span></p>
-	            </div> 
-			</div>
+		<div class="background-image-holder fadeIn">
+					<%= image_tag('saheader.jpg', class: 'img-responsive', alt: 'startup academy') %>
+				</div>
 		</div>
-	</div>
-    <!-- /MAIN SLIDER -->
 
+    <!-- /MAIN SLIDER -->
 	<!-- Main Content
 	================================================== -->
    
