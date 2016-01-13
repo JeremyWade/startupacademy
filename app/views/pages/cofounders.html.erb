@@ -1,4 +1,4 @@
-<%= render 'layouts/nav' %>
+<%= render 'layouts/header' %>
   
   	<!-- Main Content
 	================================================== -->
@@ -13,21 +13,14 @@
 						<div class="single-post-heading gap">
 				        	<div class="centered fade-up section-heading">
 				        		<p>
-				        		<a href="http://startupacademy.jsie.in/topics/week1/"> 
-				        		<span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"</span></a>
-				        		<span class="author">Week 1</span> / 
-				        		<span class="category">Startup Academy</span> / 
-				        		<span class="date">Week 3</span>
-				        		<a href="http://startupacademy.jsie.in/topics/week3/"> 
-				        		<span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"</span></a>
-				        		</p>
-				                <h2 class="main-title"><strong>Finding Co-founders</strong></h2>
-				                <span class="author">Week 2</span>
+				                <h1><strong>Finding Co-founders</strong></h1>
+				                </p>
 				            </div> 
 						</div>
 						<div class="charter">
 						<div class="row gap">
 							<div class="col-md-12 fade-up single-post-content">
+								<br>
 								<p>Looking for a co-founder? You should start this process by first looking at yourself. What are your core strengths and skills? What about your weaknesses? Co-founders can help complement your skills, help you manage your time more effectively, and provide moral support. But the decision to bring on new co-founders shouldn't be taken lightly. The following guide will walk you through why finding the right co-founder is so important and what you need to do to find the right one(s). Ultimately, building a cohesive team will put you one step closer to executing your startup idea. </p>
 
 								<h2>What is the perfect startup team?</h2>
@@ -78,113 +71,89 @@
 					</div>
 				</div>
 				
-	                <div id="single-sidebar" class="col-md-4 col-sm-4 pull-left">
-		                <div id="single-sidebar-inner">
-			                <div class="widget big-items-widget">
-		                		<h2 class="widget-title fade-down"><strong>Featured</strong>Resources</h2>
-		                		<div id="featured-posts-carousel-widget-2" class="carousel slide carousel-fade" data-ride="carousel">
+	<div id="single-sidebar" class="col-md-4 col-sm-4 pull-left">
+    <div id="single-sidebar-inner">
 
-									<div class="carousel-inner">
-										<div class="item active">
-							                <div class="blog-item fade-up">
-							                    <div class="item-inner">
-		                    						<div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
-							                        <img class="img-responsive" src="assets/img/cofounder/founder2be.png" alt="Founder 2Be">	                        
-							                        <div class="overlay">
-							                        	<h2>Founder 2be</h2>
-							                        	<p>People around the world use Founder2be every day to discover great co-founders</p>
-							                        	<div class="overlay-metas">
-								                            <a class="post-date pull-left" href="#"></a>  
-								                            <a class="view-post pull-right" href="https://www.founder2be.com/" target="_blank">Learn More</a>       
-							                            </div>      
-							                        </div>           
-							                    </div>        
-							                </div>  
-										</div>
-										<div class="item">
-							                <div class="blog-item fade-up">
-							                    <div class="item-inner">
-			                    					<div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
-							                        <img class="img-responsive" src="assets/img/cofounder/cofounderslab.jpg" alt="Cofounders Lab">	                        
-							                        <div class="overlay">
-							                        	<h2>Cofounders Lab</h2>
-							                        	<p>Build your core startup team, Online, Offline, and on Mobile</p>
-							                        	<div class="overlay-metas">
-								                            <a class="post-date pull-left" href="#"></a>  
-								                            <a class="view-post pull-right" href="https://www.cofounderslab.com/">Read More</a>       
-							                            </div>      
-							                        </div>           
-							                    </div>        
-							                </div>  
-										</div>
-										<div class="item">
-							                <div class="blog-item fade-up">
-							                    <div class="item-inner">
-			                    					<div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
-							                        <img class="img-responsive" src="assets/img/cofounder/founderdating.png" alt="Co-Founder Dating">	                        
-							                        <div class="overlay">
-							                        	<h2>Founder Dating</h2>
-							                        	<p>A network of talented entrepreneurs helping one another start and grow companies.</p>
-							                        	<div class="overlay-metas">
-								                            <a class="post-date pull-left" href="#"></a>  
-								                            <a class="view-post pull-right" href="http://founderdating.com/">Learn More</a>       
-							                            </div>      
-							                        </div>           
-							                    </div>        
-							                </div>  
-										</div>
-									</div>
+    <div class="widget">
+	<h2 class="widget-title fade-down"><strong>Featured</strong>Articles</h2>
+	<div class="recent-comment-list">
+	<ul class="comment-list fade-up">
 
-								</div>
-									
-								<!-- Indicators -->
-								<ol class="carousel-indicators footer-indicators">
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="0" class="active"></li>
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="1"></li>
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="2"></li>
-								</ol>
-							</div>
+	<li>
+	<div class="commentText">
+    <h4><%= link_to("Questions to Ask Potential Co-Founders", "http://founderdating.com/questions-to-ask-potential-cofounders/", target: "_blank")%></h4>
+   <%= link_to("Jessica Alter, Founder Dating", "https://twitter.com/jalter", target: "_blank")%>
+  </div>
+  </li>
+	<li>
+	<div class="commentText">
+    <h4><%= link_to("How to Find a Co-Founder 101", "https://www.cofounderslab.com/resources/video-courses/how-to-find-a-co-founder-101-lesson-1", target: "_blank")%></h4>
+   <%= link_to("Shahab Kaviani, CoFoundersLab", "https://twitter.com/kavianis", target: "_blank")%>
+  </div>
+  </li>
+	<li>
+	<div class="commentText">
+    <h4><%= link_to("You Need a Co-Founder, Not a Slave", "http://yourstory.com/2015/07/need-co-founder/", target: "_blank")%></h4>
+   <%= link_to("Your Story", "http://yourstory.com/", target: "_blank")%>
+  </div>
+  </li>    
+   <li>
+	<div class="commentText">
+    <h4><%= link_to("Ideas, Products, Teams and Execution", "http://www.howtostartastartup.co/start-startup-lecture-2-ideas-products-teams-execution-part-ii/", target: "_blank")%></h4>
+   <%= link_to("Sam Altman, YCombinator", "https://twitter.com/sama", target: "_blank")%>
+  </div>
+  </li>					            
+  <li>
+	<div class="commentText">
+    <h4><%= link_to("10 Steps to Finding the Right Co-Founder", "http://www.entrepreneur.com/article/244259", target: "_blank")%></h4>
+   <%= link_to("Entrepreneur Magazine", "http://www.entrepreneur.com/", target: "_blank")%>
+  </div>
+  </li>							            
+    <li>
+	<div class="commentText">
+    <h4><%= link_to("Founder Vesting", "http://cdixon.org/2009/04/21/founder-vesting/", target: "_blank")%></h4>
+   <%= link_to("Chris Dixon, Venture Capitalist", "https://twitter.com/cdixon", target: "_blank")%>
+  </div>
+  </li>						            
+   </ul>
+  </div>
+  </div>						            
+							      
+      <div class="widget">
+	<h2 class="widget-title fade-down"><strong>Featured</strong>Resources</h2>
+	<div class="recent-comment-list">
+	<ul class="comment-list fade-up">					           							
+   <li>
+	<div class="commentText">
+    <h4><%= link_to("Founder 2be", "https://www.founder2be.com/", target: "_blank")%></h4>
+    Find a Cofounder
+  </div>
+  </li>
 
-		                	<div class="widget">
-		                		<h2 class="widget-title fade-down"><strong>Featured</strong>Articles</h2>
-		                		<div class="recent-comment-list">
-		                			<ul class="comment-list fade-up">
-							            <li>
-							                <div class="commentText">
-							                    <span><strong><a href="#" target="_blank"></a>Questions to Ask Potential Co-Founders</p>
-							                    <span><strong></strong>by <a href="http://founderdating.com/questions-to-ask-potential-cofounders/" target="_blank">Jessica Alter, Founder Dating</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							                <div class="commentText">
-							                    <span><strong><a href="#"></a>How to Find a Co-Founder 101</p><span><strong></strong>by <a href="https://www.cofounderslab.com/resources/video-courses/how-to-find-a-co-founder-101-lesson-1" target="_blank">Shahab Kaviani, CoFoundersLab</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							                <div class="commentText">
-							                     <span><strong><a href="#"></a>You Need a Co-Founder, Not a Slave</p><span><strong></strong>by <a href="http://yourstory.com/2015/07/need-co-founder/" target="_blank">Your Story</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							            	<div class="commentText">
-							                 	<span><strong><a href="#"></a>Ideas, Products, Teams and Execution</p><span><strong></strong>by <a href="http://www.howtostartastartup.co/start-startup-lecture-2-ideas-products-teams-execution-part-ii/" target="_blank">Sam Altman, YCombinator</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							               <div class="commentText">
-							                 	<span><strong><a href="#"></a>10 Steps to Finding the Right Co-Founder</p><span><strong></strong>by <a href="http://www.entrepreneur.com/article/244259" target="_blank">Entrepreneur Magazine</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							            <div class="commentText">
-							                 	<span><strong><a href="#"></a>Founder Vesting</p><span><strong></strong>by <a href="http://cdixon.org/2009/04/21/founder-vesting/" target="_blank">Chris Dixon, Venture Capitalist</a></strong></span>
-							                </div>
-							            </li>
-			        				</ul>
-		        				</div>
-			                </div>
-		                	                                    
-				                    </div>          
+   <li>
+	<div class="commentText">
+    <h4><%= link_to("Cofounders Lab", "https://www.cofounderslab.com/", target: "_blank")%></h4>
+    Build Your Core Team
+  </div>
+  </li>
+
+  <li>
+	<div class="commentText">
+    <h4><%= link_to("Founder Dating", "http://founderdating.com/", target: "_blank")%></h4>
+    Find Your Cofounder
+  </div>
+  </li>
+  </ul>							
+  </div>           
+  </div>        
+  </div>  
+  </div>
+  </div>
+<div class="jumbotron text-center">
+    <h3><%= link_to("Next -> Business Model", "businessmodel_path")%></h3>
+    <h3><%= link_to("A Great Idea <- Back", "greatidea_path")%></h3>
+  </div>      
+	 </div>          
 				                </div>	
 		                	</div>
 	                	</div>

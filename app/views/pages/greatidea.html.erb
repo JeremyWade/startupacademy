@@ -1,4 +1,4 @@
-<%= render 'layouts/nav' %>
+<%= render 'layouts/header' %>
 <!-- Main Content
 	================================================== -->
     <div id="single-post">
@@ -10,16 +10,15 @@
 						<%= image_tag('greatidea-big.jpg', class: 'img-responsive', alt: 'Great Startup Idea') %>	
 						<div class="single-post-heading gap">
 				        	<div class="centered fade-up section-heading">
-				        		<p>
-				        		<span class="category">A Great Startup Idea</span>
-				        		</p>
-				                <span class="author">Week 1</span>
+				        	     <p>
+ 				                <h1><strong>A Great Idea</strong></h1>
+				                </p>
 				            </div> 
 						</div>
 						<div class="charter">
 						<div class="row gap">
 							<div class="col-md-12 fade-up single-post-content">
-								<br>
+								<br><br>
 								<p><strong>“By far the most common mistake startups make is to solve problems no one has.” - Paul Graham</strong> </p>
 
 								</p>A great way to think about startup ideas is to think about problems. Is your startup idea solving a worthwhile problem? How would you verify the problem exists? Problems can arise in many forms, as pain points, unmet needs, or frustrations. Starting with the problem is key to avoid wasting time working on a solution in search for a problem.  </p>
@@ -45,115 +44,88 @@
 						</div>
 					</div>
 							
-	                <div id="single-sidebar" class="col-md-4 col-sm-4 pull-left">
-		                <div id="single-sidebar-inner">
+	 <div id="single-sidebar" class="col-md-4 col-sm-4 pull-left">
+	<div id="single-sidebar-inner">
 			                
 
-		                	<div class="widget">
-		                		<h2 class="widget-title fade-down"><strong>Featured</strong>Articles</h2>
-		                		<div class="recent-comment-list">
-		                			<ul class="comment-list fade-up">
-							            <li>
-							                <div class="commentText">
-							                    <span><strong><a href="#" target="_blank"></a>How to Get Startup Ideas</p>
-							                    <span><strong></strong>by <a href="http://www.paulgraham.com/startupideas.html" target="_blank">Paul Graham, YCombinator</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							                <div class="commentText">
-							                    <span><strong><a href="#"></a>How to Choose Your Startup Idea</p><span><strong></strong>by <a href="http://sequoiacapital.tumblr.com/post/33921354769/how-to-choose-your-startup-idea" target="_blank">Sequoia Capital</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							                <div class="commentText">
-							                     <span><strong><a href="#"></a>The 10x Rule for Great Startup Ideas</p><span><strong></strong>by <a href="http://thenextweb.com/entrepreneur/2015/07/13/the-10x-rule-for-great-startup-ideas/" target="_blank">Walter Chen,Co-founder of iDoneThis</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							            	<div class="commentText">
-							                 	<span><strong><a href="#"></a>Before the Startup</p><span><strong></strong>by <a href="https://clip.mn/video/yt-ii1jcLg-eIQ" target="_blank">Paul Graham, YCombinator</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							               <div class="commentText">
-							                 	<span><strong><a href="#"></a>What Are The Best Ways To Think Of Ideas For A Startup?</p><span><strong></strong>by <a href="http://www.forbes.com/sites/quora/2013/05/08/what-are-the-best-ways-to-think-of-ideas-for-a-startup/" target="_blank">Dan Lewis, Head of Product at Wavii (acquired by Google)</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							            <div class="commentText">
-							                 	<span><strong><a href="#"></a>How To Start a Startup</p><span><strong></strong>by <a href="https://clip.mn/video/yt-CBYhVcO4WgI" target="_blank">Sam Altman, Dustin Moskovitz</a></strong></span>
-							                </div>
-							            </li>
-			        				</ul>
-		        				</div>
-			                </div>
+    <div class="widget">
+	<h2 class="widget-title fade-down"><strong>Featured</strong>Articles</h2>
+	<div class="recent-comment-list">
+	<ul class="comment-list fade-up">
+
+	<li>
+	<div class="commentText">
+    <h4><%= link_to("How to Get Great Startup Ideas", "http://www.paulgraham.com/startupideas.html", target: "_blank")%></h4>
+   <%= link_to("Paul Graham, YCombinator", "https://twitter.com/paulg", target: "_blank")%>
+  </div>
+  </li>
+  <li>
+  <div class="commentText">
+    <h4><%= link_to("How to Choose Your Startup Idea", "http://sequoiacapital.tumblr.com/post/33921354769/how-to-choose-your-startup-idea", target: "_blank")%></h4>
+   <%= link_to("Sequoia Capital", "https://www.sequoiacap.com/", target: "_blank")%>
+  </div>
+  </li>
+<li>
+  <div class="commentText">
+    <h4><%= link_to("The 10x Rule for Great Startup Ideas", "http://thenextweb.com/entrepreneur/2015/07/13/the-10x-rule-for-great-startup-ideas/", target: "_blank")%></h4>
+   <%= link_to("Walter Chen,Co-founder of iDoneThis", "https://twitter.com/smalter", target: "_blank")%>
+  </div>
+  </li>
+<li>
+  <div class="commentText">
+    <h4><%= link_to("Before the Startup", "https://clip.mn/video/yt-ii1jcLg-eIQ", target: "_blank")%></h4>
+   <%= link_to("Paul Graham, YCombinator", "https://twitter.com/paulg", target: "_blank")%>
+  </div>
+  </li>
+<li>
+  <div class="commentText">
+    <h4><%= link_to("What Are The Best Ways To Think Of Ideas For A Startup", "http://www.forbes.com/sites/quora/2013/05/08/what-are-the-best-ways-to-think-of-ideas-for-a-startup", target: "_blank")%></h4>
+   <%= link_to("Dan Lewis, CEO of Convoy", "https://angel.co/danformiles", target: "_blank")%>
+  </div>
+  </li>
+	<li>
+  <div class="commentText">
+    <h4><%= link_to("How To Start a Startup", "https://clip.mn/video/yt-CBYhVcO4WgI", target: "_blank")%></h4>
+   <%= link_to("Sam Altman, YCombinator", "https://twitter.com/sama", target: "_blank")%>
+  </div>
+  </li>						            
+   </ul>
+  </div>
+  </div>
 			               
+    <div class="widget">
+	<h2 class="widget-title fade-down"><strong>Featured</strong>Resources</h2>
+	<div class="recent-comment-list">
+	<ul class="comment-list fade-up">
 
-
-		                	          <div class="widget big-items-widget">
-		                		<h2 class="widget-title fade-down"><strong>Featured</strong>Resources</h2>
-		                		<div id="featured-posts-carousel-widget-2" class="carousel slide carousel-fade" data-ride="carousel">
-
-									<div class="carousel-inner">
-													<div class="item active">
-							                <div class="blog-item fade-up">
-							                    <div class="item-inner">
-			                    					<div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
-							                        <img class="img-responsive" src="assets/img/designkit.jpg" alt="Design Kit">	                        
-							                        <div class="overlay">
-							                        	<h2>IDEO.org Design Kit</h2>
-							                        	<p>7 Rules to unlock the creative power of brainstorming</p>
-							                        	<div class="overlay-metas">
-								                            <a class="post-date pull-left" href="#"></a>  
-								                            <a class="view-post pull-right" href="http://www.designkit.org/methods/28">Learn More</a>       
-							                            </div>       
-							                        </div>           
-							                    </div>        
-							                </div>  
-										</div>
-										<div class="item">
-							                <div class="blog-item fade-up">
-							                    <div class="item-inner">
-			                    					<div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
-							                        <img class="img-responsive" src="assets/img/funders.jpg" alt="Founders and Funders">	                        
-							                        <div class="overlay">
-							                        	<h2>Funders and Founders</h2>
-							                        	<p>Visual startup blog</p>
-							                        	<div class="overlay-metas">
-								                            <a class="post-date pull-left" href="#"></a>  
-								                            <a class="view-post pull-right" href="http://fundersandfounders.com/">Read More</a>       
-							                            </div>      
-							                        </div>           
-							                    </div>        
-							                </div>  
-										</div>
-											<div class="item">
-							                <div class="blog-item fade-up">
-							                    <div class="item-inner">
-		                    						<div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
-							                        <img class="img-responsive" src="assets/img/yourstory.jpg" alt="Your Story">	                        
-							                        <div class="overlay">
-							                        	<h2>Your Story</h2>
-							                        	<p>Media platform dedicated to passionately championing and promoting the entrepreneurial ecosystem in India.</p>
-							                        	<div class="overlay-metas">
-								                            <a class="post-date pull-left" href="#"></a>  
-								                            <a class="view-post pull-right" href="http://yourstory.com/" target="_blank">Learn More</a>       
-							                            </div>     
-							                        </div>           
-							                    </div>        
-							                </div>  
-										</div>
-									</div>
-
-								</div>
-									
-								<!-- Indicators -->
-								<ol class="carousel-indicators footer-indicators">
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="0" class="active"></li>
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="1"></li>
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="2"></li>
-								</ol>
-							</div>                          
+    <li>
+	<div class="commentText">
+    <h4><%= link_to("IDEO.org Design Kit", "http://www.paulgraham.com/startupideas.html", target: "_blank")%></h4>
+    Brainstorming Toolkit
+  </div>
+  </li>
+   
+   <li>
+	<div class="commentText">
+    <h4><%= link_to("Founders and Funders", "http://fundersandfounders.com", target: "_blank")%></h4>
+    Visual startup blog
+  </div>
+  </li>            
+	<li>
+	<div class="commentText">
+    <h4><%= link_to("Your Story", "http://yourstory.com/", target: "_blank")%></h4>
+    Media platform for Indian startups
+  </div>
+  </li> 
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>   
+<div class="jumbotron text-center">
+    <h3><%= link_to "Next -> Cofounders", cofounders_path %></h3>
+  </div>                       
 				                    </div>          
 				                </div>	
 		                	</div>
