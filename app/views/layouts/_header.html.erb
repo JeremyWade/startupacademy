@@ -13,6 +13,7 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse in" id="main-navigation-collapse" aria-expanded="true">
+              <div class="container">
         <ul class="nav navbar-nav navbar-right">
               <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">ABOUT</a>
                     <ul class="dropdown-menu">
@@ -36,46 +37,63 @@
                           <div class="col-lg-12">
                             <div class="yamm-content">
                  <ul class="media-list">
-                  
                   <li class="media">
                     <%= link_to greatidea_path do %>
-                      <%= image_tag('greatidea.jpg', class: 'img-responsive', alt: 'great idea') %>
+                      <%= image_tag('greatidea-small.jpg', class: 'media-object', class: 'pull-right', alt: 'great idea') %>
                           <% end %>
                    <div class="media-body">
                    <h4 class="media-heading">A Great Idea</h4>
-                   Cras sit amet nibh libero, in gravida nulla.Nulla vel metus scelerisque ante.
+                    What problem am I solving?
                   </div>
                   </li>
 
-                   <li class="media"><a href="#" class="pull-right">PIC</a>
+                   <li class="media">
+                    <%= link_to cofounders_path do %>
+                    <%= image_tag('cofounder-small.jpg', class: 'media-object', class: 'pull-right', alt: 'cofounder') %>
+                    <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Cofounders</h4>Cras sit amet nibh libero, in gravida nulla.Nulla vel metus scelerisque ante.        
+                   <h4 class="media-heading">Cofounders</h4>   Do I need a cofounder?
                   </div>
                   </li>
-                   <li class="media"><a href="#" class="pull-right">PIC</a>
+                   <li class="media">
+                     <%= link_to businessmodel_path do %>
+                    <%= image_tag('bmc-small.jpg', class: 'media-object', class: 'pull-right', alt: 'business model') %>
+                    <% end %>
                   <div class="media-body">
                    <h4 class="media-heading">Business Model</h4>
+                   Do I need to write a business plan?
                   </div>
                   </li>
-                    <li class="media"><a href="#" class="pull-right">PIC</a>
+                    <li class="media">
+                    <%= link_to gettingtraction_path do %>
+                    <%= image_tag('traction-small.jpg', class: 'media-object', class: 'pull-right', alt: 'traction') %>
+                      <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Getting Traction</h4>Cras sit amet nibh libero, in gravida nulla.Nulla vel metus scelerisque ante.    
+                   <h4 class="media-heading">Getting Traction</h4>How do I measure my progress?    
                   </div>
                   </li>
-                  <li class="media"><a href="#" class="pull-right">PIC</a>
+                  <li class="media">
+                    <%= link_to greatidea_path do %>
+                    <%= image_tag('greatidea-small.jpg', class: 'media-object', class: 'pull-right', alt: 'great idea') %>
+                    <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Legal Issues</h4>Cras sit amet nibh libero, in gravida nulla.Nulla vel metus scelerisque ante.    
+                   <h4 class="media-heading">Legal Issues</h4>At what stage do I need a lawyer?    
                   </div>
                   </li>
-                    <li class="media"><a href="#" class="pull-right">PIC</a>
+                    <li class="media">
+                    <%= link_to greatidea_path do %>
+                    <%= image_tag('funds-small.jpg', class: 'media-object', class: 'pull-right', alt: 'funding') %>
+                    <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Fundraising</h4>Cras sit amet nibh libero, in gravida nulla.Nulla vel metus scelerisque ante.    
+                   <h4 class="media-heading">Fundraising</h4>
+                   How do I get funding?   
                   </div>
                   </li>                                
                                    </ul>
                                 </div>
-                                </div>  
+                                </div> 
                         </ul>
+
 
            <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Legal Enterprenuership Cell</a>
                     <ul class="dropdown-menu">
@@ -99,6 +117,7 @@
   </ul>
           </li>
  </div>
+</div>
 
             <!-- /.navbar-collapse -->
         </div>
