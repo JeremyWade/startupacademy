@@ -1,5 +1,21 @@
 <%= render 'layouts/header' %>
+ <title>Finding Cofounders</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
   
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1528088910840372";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
   	<!-- Main Content
 	================================================== -->
     <div id="single-post">
@@ -46,7 +62,7 @@
 
 								<strong>3. Personality:</strong> Working on a startup will mean spending alot of time with your co-founders. Do you think you can get along with this person in stressful times? <br>
 
-								<strong>4. Values:</strong> Do you value a collaborative work style, or do you prefer a more hiarchical approach to delegating important tasks. Ensuring you and your cofounders have shared values could prevent the kind of future disagreements that kills early stage startups. <br>
+								<strong>4. Values:</strong> Do you value a collaborative work style, or do you prefer a more hierarchical approach to delegating important tasks. Ensuring you and your cofounders have shared values could prevent the kind of future disagreements that kills early stage startups. <br>
 
 								<strong>5. Life Stages:</strong> At different stages of life we may have different responsibilities and expectations. You and your co-founders should be clear on each others priorities and dedication levels to the startup. <br>
 
@@ -66,11 +82,11 @@
 
 								<strong>4. Roles and Responsibilities</strong> – it’s great to have complementary skill sets, but there is such an immense amount of work to do at the beginning that you should make sure you agree on who is really going to own certain areas and which areas can/will be shared in the first 12-18 months. </p>
 							</div>
+							</div>
 							<div class="fb-share-button" data-href="http://startupacademy.jsie.in/topics/week2/" data-layout="button_count"></div>
+							<br>
 						</div>
 					</div>
-				</div>
-				
 	<div id="single-sidebar" class="col-md-4 col-sm-4 pull-left">
     <div id="single-sidebar-inner">
 
@@ -143,17 +159,31 @@
     Find Your Cofounder
   </div>
   </li>
-  </ul>							
+  </ul>	
+</div>
+</div>
+
+  <div class="widget">
+  <h2 class="widget-title fade-down"><strong>Social</strong>Media</h2>
+  <div class="recent-comment-list">
+  <ul class="comment-list fade-up">
+<div class="fb-page" data-href="https://www.facebook.com/JSiEstartupacademy" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/JSiEstartupacademy"><a href="https://www.facebook.com/JSiEstartupacademy">StartUp Academy</a></blockquote></div></div>
+   </div>
+  </li> 
+  </ul>	
+
   </div>           
   </div>        
   </div>  
   </div>
   </div>
 <div class="jumbotron text-center">
-    <h3><%= link_to("Next -> Business Model", "businessmodel_path")%></h3>
-    <h3><%= link_to("A Great Idea <- Back", "greatidea_path")%></h3>
-  </div>      
-	 </div>          
+<div class="btn-group" role="group" aria-label=""></div>
+  <button type="button" class="btn btn-default"><- A Great Idea</button>
+  <button type="button" class="btn btn-default">Business Model -></button>
+</div>
+</div>
+  </div>               
 				                </div>	
 		                	</div>
 	                	</div>

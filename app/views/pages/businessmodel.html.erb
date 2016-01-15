@@ -1,5 +1,21 @@
-<%= render 'layouts/nav' %>
+<%= render 'layouts/header' %>
+<title>Business Model Canvas</title>
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1528088910840372";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- Main Content
 	================================================== -->
@@ -12,27 +28,20 @@
 					<div class="col-md-8">
 						<%= image_tag('bmc-big.jpg', class: 'img-responsive', alt: 'Business Model Canvas') %>	
 						<div class="single-post-heading gap">
-				        	<div class="centered fade-up section-heading">
-				        	<p>
-				        		<a href="http://startupacademy.jsie.in/topics/week2/"> 
-				        		<span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"</span></a>
-				        		<span class="author">Week 2</span> / 
-				        		<span class="category">Startup Academy</span> / 
-				        		<span class="date">Week 4</span>
-				        		<a href="http://startupacademy.jsie.in/topics/week4/"> 
-				        		<span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"</span></a>
-				        		</p>
-				                <h2 class="main-title"><strong>Business Model Canvas</strong></h2>
-				                <span class="author">Week 3</span>
-				                
+				        <div class="centered fade-up section-heading">
+				        	     <p>
+ 				                <h1><strong>Business Model Canvas</strong></h1>
+				                </p>
 				            </div> 
 						</div>
 						<div class="charter">
 						<div class="row gap">
 							<div class="col-md-12 fade-up single-post-content">
+								<br>
 								<p>The Business Model Canvas is a tool to help you develop and document the business model of your startup idea. In just one page this template captures the nine building blocks a business model. With increased popularity of the business model canvas, a common language has been created around these nine building blocks.  </p>
 
-								<p><img class="alignright size-full wp-image-74530 img-responsive" src="assets/img/bmc.png" alt="Business-Model-Canvas-Annoted-760" width="760" height="487">
+								<p>
+								 <%= link_to image_tag('canvas.png', class: 'img-responsive', alt: 'business model canvas', width: '760', height: '487'), "#" %>
                    
                         		<h2 class="page-stitle"></h2>
                         		<a href="http://www.businessmodelgeneration.com/downloads/business_model_canvas_poster.pdf" target="_blank" class="btn btn-primary btn-lg">Download the Business Model Canvas</a></p>
@@ -54,6 +63,7 @@
 
 							</div>
 						<div class="fb-share-button" data-href="http://startupacademy.jsie.in/topics/week3/" data-layout="button_count"></div>
+						<br>
 						</div>
 					</div>
 				</div>
@@ -62,75 +72,68 @@
 		                <div id="single-sidebar-inner">
 			                
 
-		                	<div class="widget">
-		                		<h2 class="widget-title fade-down"><strong>Featured</strong>Articles</h2>
-		                		<div class="recent-comment-list">
-		                			<ul class="comment-list fade-up">
-							            <li>
-							                <div class="commentText">
-							                    <span><strong><a href="#" target="_blank"></a>The 30 Minute Business Plan: Business Model Canvas Made Easy</p>
-							                    <span><strong></strong>by <a href="http://www.alexandercowan.com/business-model-canvas-templates/" target="_blank">Alex Cowan</a></strong></span>
-							                </div>
-							            </li>
-							            <li>
-							                <div class="commentText">
-							                    <span><strong><a href="#"></a>How to Build a Startup: The Business Model Canvas</p><span><strong></strong>by <a href="https://www.udacity.com/course/viewer#!/c-ep245/l-48743167/m-48738150" target="_blank">Steve Blank</a></strong></span>
-							                </div>
-							            </li>
-							            
-			        				</ul>
-		        				</div>
-			                </div>
+<div class="widget">
+<h2 class="widget-title fade-down"><strong>Featured</strong>Articles</h2>
+<div class="recent-comment-list">
+<ul class="comment-list fade-up">
+
+    <li>
+	<div class="commentText">
+    <h4><%= link_to("The 30 Minute Business Plan: Business Model Canvas Made Easy", "http://www.alexandercowan.com/business-model-canvas-templates/", target: "_blank")%></h4>
+   <%= link_to("Alex Cowan", "https://twitter.com/cowanSF", target: "_blank")%>
+  </div>
+  </li>
+   <li>
+	<div class="commentText">
+    <h4><%= link_to("How to Build a Startup: The Business Model Canvas", "https://www.udacity.com/course/viewer#!/c-ep245/l-48743167/m-4873815", target: "_blank")%></h4>
+   <%= link_to("Steve Blank", "https://twitter.com/sgblank", target: "_blank")%>
+  </div>
+  </li>					        
+							       
+  </ul>
+  </div>
+  </div>
 			                
-		                	          <div class="widget big-items-widget">
-		                		<h2 class="widget-title fade-down"><strong>Featured</strong>Resources</h2>
-		                		<div id="featured-posts-carousel-widget-2" class="carousel slide carousel-fade" data-ride="carousel">
+<div class="widget">
+<h2 class="widget-title fade-down"><strong>Featured</strong>Articles</h2>
+<div class="recent-comment-list">
+<ul class="comment-list fade-up">
+	  <li>
+	<div class="commentText">
+    <h4><%= link_to("Strategyzer", "https://strategyzer.com/", target: "_blank")%></h4>
+   Business Modeling Tools
+  </div>
+  </li>
+    <li>
+	<div class="commentText">
+    <h4><%= link_to("Lean Stack", "http://leanstack.com/", target: "_blank")%></h4>
+   Tools, content and coaching for entrepreneurs
+   </div>
+  </li> 
+  </ul>
+</div>
+</div>
 
-									<div class="carousel-inner">
-										<div class="item active">
-							                <div class="blog-item fade-up">
-							                    <div class="item-inner">
-		                    						<div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
-							                        <img class="img-responsive" src="assets/img/strategyzer.jpg" alt="Strategizer">	                        
-							                        <div class="overlay">
-							                        	<h2>Strategyzer</h2>
-							                        	<p>Practical tools to help you understand customers, design better value propositions, and find the right business model.</p>
-							                        	<div class="overlay-metas">
-								                            <a class="post-date pull-left" href="#"></a>  
-								                            <a class="view-post pull-right" href="https://strategyzer.com/" target="_blank">Learn More</a>       
-							                            </div>      
-							                        </div>           
-							                    </div>        
-							                </div>  
-										</div>
-										<div class="item">
-							                <div class="blog-item fade-up">
-							                    <div class="item-inner">
-			                    					<div class="item-icon-wrapper"><i class="pe-7s-close"></i></div>
-							                        <img class="img-responsive" src="assets/img/leanstack.jpg" alt="Lean Stack">	                        
-							                        <div class="overlay">
-							                        	<h2>Lean Stack</h2>
-							                        	<p>Tools, content and coaching for entrepreneurs</p>
-							                        	<div class="overlay-metas">
-								                            <a class="post-date pull-left" href="#"></a>  
-								                            <a class="view-post pull-right" href="http://leanstack.com/">Read More</a>       
-							                            </div>      
-							                        </div>           
-							                    </div>        
-							                </div>  
-										</div>
-										
-									</div>
+  <div class="widget">
+  <h2 class="widget-title fade-down"><strong>Social</strong>Media</h2>
+  <div class="recent-comment-list">
+  <ul class="comment-list fade-up">
+<div class="fb-page" data-href="https://www.facebook.com/JSiEstartupacademy" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/JSiEstartupacademy"><a href="https://www.facebook.com/JSiEstartupacademy">StartUp Academy</a></blockquote></div></div>
+   </div>
+  </li> 
+  </ul>
 
-								</div>
-									
-								<!-- Indicators -->
-								<ol class="carousel-indicators footer-indicators">
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="0" class="active"></li>
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="1"></li>
-									<li data-target="#featured-posts-carousel-widget-2" data-slide-to="2"></li>
-								</ol>
-							</div>                          
+  </div>
+  </div>
+  </div>
+  </div>
+  </div> 						
+<div class="jumbotron text-center">
+  <div class="btn-group btn-group-lg" role="group" aria-label="">...</div>
+  <button type="button" class="btn btn-default"><- Cofounders</button>
+  <button type="button" class="btn btn-default">Getting Traction -></button>
+</div>
+  </div>                       
 				                    </div>          
 				                </div>	
 		                	</div>

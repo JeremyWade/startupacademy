@@ -21,7 +21,7 @@
                           <div class="col-lg-12">
                              <h2 class="widget-title fade-down"><br><strong>About</strong>  Startup Academy</h2>
                             
-                              <h4>Startup Academy aims to inspire our best and the brightest to be entrepreneurs that creatively address the world’s most pressing challenges. Designed to enhance collaboration, JSiE provides budding entrepreneurs with mentorship, resources, access to capital, publicity and connections to top talent.</h4><br>
+                              <h4 class="media-heading">Startup Academy aims to inspire our best and the brightest to be entrepreneurs that creatively address the world’s most pressing challenges. Designed to enhance collaboration, JSiE provides budding entrepreneurs with mentorship, resources, access to capital, publicity and connections to top talent.</h4><br>
                             </div>
                              
                             <ul class="yamm-list list-unstyled">
@@ -42,7 +42,7 @@
                       <%= image_tag('greatidea-small.jpg', class: 'media-object', class: 'pull-right', alt: 'great idea') %>
                           <% end %>
                    <div class="media-body">
-                   <h4 class="media-heading">A Great Idea</h4>
+                  <h4><%= link_to("A Great Idea", greatidea_path, class: 'media-heading')%></h4>
                     What problem am I solving?
                   </div>
                   </li>
@@ -52,7 +52,8 @@
                     <%= image_tag('cofounder-small.jpg', class: 'media-object', class: 'pull-right', alt: 'cofounder') %>
                     <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Cofounders</h4>   Do I need a cofounder?
+                    <h4><%= link_to("Cofounders", cofounders_path, class: 'media-heading')%></h4>
+                     Do I need a cofounder?
                   </div>
                   </li>
                    <li class="media">
@@ -60,7 +61,7 @@
                     <%= image_tag('bmc-small.jpg', class: 'media-object', class: 'pull-right', alt: 'business model') %>
                     <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Business Model</h4>
+                  <h4><%= link_to("Business Model", businessmodel_path, class: 'media-heading')%></h4>
                    Do I need to write a business plan?
                   </div>
                   </li>
@@ -69,7 +70,8 @@
                     <%= image_tag('traction-small.jpg', class: 'media-object', class: 'pull-right', alt: 'traction') %>
                       <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Getting Traction</h4>How do I measure my progress?    
+                  <h4><%= link_to("Getting Traction", gettingtraction_path, class: 'media-heading')%></h4>
+                   How do I measure my progress?    
                   </div>
                   </li>
                   <li class="media">
@@ -77,7 +79,8 @@
                     <%= image_tag('greatidea-small.jpg', class: 'media-object', class: 'pull-right', alt: 'great idea') %>
                     <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Legal Issues</h4>At what stage do I need a lawyer?    
+                  <h4><%= link_to("Legal Checklist", legalchecklist_path, class: 'media-heading')%></h4>
+                   At what stage do I need a lawyer?    
                   </div>
                   </li>
                     <li class="media">
@@ -85,7 +88,7 @@
                     <%= image_tag('funds-small.jpg', class: 'media-object', class: 'pull-right', alt: 'funding') %>
                     <% end %>
                   <div class="media-body">
-                   <h4 class="media-heading">Fundraising</h4>
+                  <h4><%= link_to("Fundraising", fundraising_path, class: 'media-heading')%></h4>
                    How do I get funding?   
                   </div>
                   </li>                                
@@ -101,13 +104,14 @@
                           <div class="col-lg-12">
                              <h2 class="widget-title fade-down"><br><strong>Legal Entreprenuership</strong> Cell</h2>
                             
-                              <h4>Startup Academy aims to inspire our best and the brightest to be entrepreneurs that creatively address the world’s most pressing challenges. Designed to enhance collaboration, JSiE provides budding entrepreneurs with mentorship, resources, access to capital, publicity and connections to top talent.</h4><br>
+                              <h4>Startup Academy aims to inspire our best and the brightest to be entrepreneurs that creatively address the world’s most pressing challenges. Designed to enhance collaboration, JSiE provides budding entrepreneurs with mentorship, resources, access to capital, publicity and connections to top talent.</h4>
+                           
 
-                              <div class="typeform-widget" data-url="https://jsie.typeform.com/to/sxJ86x" data-text="Startup Academy Application" style="width:100%;height:400px;"></div>
-                              <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+                            <div class="jumbotron text-center">
+                            <div class="btn-group btn-group-lg" role="group" aria-label=""></div>
+                          <%= link_to("Apply", "https://jsie.typeform.com/to/EpjQXv", class: 'btn btn-default') %>  
                             </div>
                             </div>
-                             
                             <ul class="yamm-list list-unstyled">
                                     <li><a href="#"></a></li>
                                   

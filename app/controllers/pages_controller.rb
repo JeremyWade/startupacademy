@@ -9,6 +9,8 @@ class PagesController < ApplicationController
   end 
   def gettingtraction 
   end
+  def legalchecklist 
+  end
   def fundraising 
   end
 
