@@ -3,10 +3,10 @@
     <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
   <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Your Website Title" />
-  <meta property="og:description"   content="Your description" />
-  <meta property="og:image"         content="http://www.your-domain.com/path/image.jpg" />
+  <meta property="og:type"          content="blog" />
+  <meta property="og:title"         content="A Great Idea" />
+  <meta property="og:description"   content="What problem are you solving?" />
+  <meta property="og:image"         content="<%=asset_url('greatidea-big.jpg') %>" />
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -155,7 +155,7 @@
   </div> 
 <div class="jumbotron text-center">
   <div class="btn-group btn-group-lg" role="group" aria-label=""></div>
-   <button type="button" class="btn btn-default">Cofounders</button>
+<%= link_to("Cofounders", "http://www.startupacademy.jsie.in/cofounders", class: 'btn btn-default') %> 
 </div>
   </div>                       
 				                    </div>          
