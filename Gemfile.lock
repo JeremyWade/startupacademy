@@ -83,9 +83,13 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    mengpaneel (0.0.2)
+      activesupport
+      mixpanel-ruby
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
+    mixpanel-ruby (2.2.0)
     multi_json (1.11.2)
     multipart-post (2.0.0)
     nokogiri (1.6.7.1)
@@ -173,6 +177,7 @@ DEPENDENCIES
   jquery-rails (~> 4.0, >= 4.0.5)
   jquery-turbolinks
   koala (~> 2.2)
+  mengpaneel
   pg
   rails (= 4.2.1)
   rails_12factor

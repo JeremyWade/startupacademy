@@ -27,6 +27,8 @@ gem 'turbolinks'
 
 gem 'execjs', '~> 2.6'
 
+gem "mengpaneel"
+
 gem 'jquery-turbolinks'
 
 gem "koala", "~> 2.2"
