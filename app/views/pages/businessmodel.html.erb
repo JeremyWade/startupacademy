@@ -1,12 +1,12 @@
 <%= render 'layouts/header' %>
-<title>Business Model Canvas</title>
-    <!-- You can use Open Graph tags to customize link previews.
-    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+
+ <% content_for :head do %>
   <meta property="og:url"           content="http://www.startupacademy.jsie.in/businessmodel" />
   <meta property="og:type"          content="blog" />
   <meta property="og:title"         content="Business Model Canvas" />
   <meta property="og:description"   content="Do you need to write a business plan?" />
   <meta property="og:image"         content="<%=asset_url('bmc-big.jpg') %>" />
+  <% end %>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

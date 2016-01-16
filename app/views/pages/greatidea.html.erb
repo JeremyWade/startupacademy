@@ -1,12 +1,12 @@
 <%= render 'layouts/header' %>
-<title>A Great Idea</title>
-    <!-- You can use Open Graph tags to customize link previews.
-    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+
+<% content_for :head do %>
   <meta property="og:url"           content="http://www.your-domain.com/your-page.html" />
   <meta property="og:type"          content="blog" />
   <meta property="og:title"         content="A Great Idea" />
   <meta property="og:description"   content="What problem are you solving?" />
   <meta property="og:image"         content="<%=asset_url('greatidea-big.jpg') %>" />
+    <% end %>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
