@@ -13,5 +13,6 @@ class PagesController < ApplicationController
   end
   def fundraising 
   end
-
+  def week1 
+  end
 end
