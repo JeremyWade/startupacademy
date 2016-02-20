@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "fundraising" => "pages#fundraising"
   get "legalchecklist" => "pages#legalchecklist"
   get "week1" => "pages#week1"
+  get "week2" => "pages#week2"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

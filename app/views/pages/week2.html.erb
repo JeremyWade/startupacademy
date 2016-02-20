@@ -1,0 +1,110 @@
+<%= render 'layouts/header' %>
+
+ <% content_for :head do %>
+  <meta property="og:url"           content="http://www.startupacademy.jsie.in/week2" />
+  <meta property="og:type"          content="blog" />
+  <meta property="og:title"         content="Week 2" />
+  <meta property="og:description"   content="Startup Academy - Week 2" />
+  <meta property="og:image"         content="<%=asset_url('week2.png') %>" />
+  <meta property="fb:app_id"        content="1535582636740127" />
+  <% end %>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1528088910840372";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+	<!-- Main Content
+	================================================== -->
+  <div id="single-post">
+    <div class="content-section">        
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+            <div class="video-container">
+						<iframe width="740" height="534" src="https://www.youtube.com/embed/lh0wFUD7Jc0" frameborder="0" allowfullscreen></iframe>
+          </div>
+						<div class="single-post-heading gap">
+				        	<div class="centered fade-up section-heading">
+				        	     <p>
+ 				                <h1><strong>Week 2</strong></h1>
+				                </p>
+				            </div> 
+						</div>
+						<div class="charter">
+						<div class="row gap">
+							<div class="col-md-12 fade-up single-post-content">
+								<br>
+								
+
+							</div>
+						</div>
+						</div>
+					</div>
+							
+	 <div id="single-sidebar" class="col-md-4 col-sm-4 pull-left">
+	<div id="single-sidebar-inner">
+			                
+
+    
+    <div class="widget">
+  <h2 class="widget-title fade-down"><strong>Featured</strong>Blog</h2>
+  <div class="recent-comment-list">
+  <ul class="comment-list fade-up">
+
+  <li>
+  <div class="commentText">
+    <h4><%= link_to("Cofounders - Startup Academy", "http://www.startupacademy.jsie.in/cofounders", target: "_blank")%></h4>
+   </div>
+  </li>                       
+   </ul>
+  </div>
+  </div>
+
+  <div class="widget">
+  <h2 class="widget-title fade-down"><strong>Mentioned</strong>Resources</h2>
+  <div class="recent-comment-list">
+  <ul class="comment-list fade-up">
+  <div class="commentText">
+    <li>
+    <h4><%= link_to("Stakeholders & Team Diagram", "https://docs.google.com/document/d/1uwoT4oUwksEeTT_1pR6aSLYVKi-eiZ43YJVkWcjwzYE/edit?usp=sharing", target: "_blank")%></h4>
+  </div>
+  </li>
+  <li>
+  <div class="commentText">
+    <h4><%= link_to("Startup Academy Slack Group", "https://jsiestartupacademy.slack.com/", target: "_blank")%></h4>
+  </div>
+  </li>
+  </li> 
+  </ul>
+<div="spacer-50"> </div>
+     <div="spacer-50"> </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div> 
+<div class="jumbotron text-center">
+  <div class="btn-group btn-group-lg" role="group" aria-label=""></div>
+<%= link_to("Week 3", "http://www.startupacademy.jsie.in/week3", class: 'btn btn-default') %> 
+</div>
+  </div>                       
+				                    </div>          
+				                </div>	
+		                	</div>
+	                	</div>
+	                </div>
+                </div>
+			</div>
+		</div>
+		</section>
+
+    </div>
+<script>mixpanel.track("Week2 Video View"); </script>
+
