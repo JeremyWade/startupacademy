@@ -1,0 +1,102 @@
+<%= render 'layouts/header' %>
+
+ <% content_for :head do %>
+  <meta property="og:url"           content="http://www.startupacademy.jsie.in/courses1" />
+  <meta property="og:type"          content="blog" />
+  <meta property="og:title"         content="Week 1" />
+  <meta property="og:description"   content="Welcome to Startup Academy - Week 1" />
+  <meta property="og:image"         content="<%=asset_url('week1.png') %>" />
+  <meta property="fb:app_id"        content="1535582636740127" />
+  <% end %>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1528088910840372";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+	<!-- Main Content
+	================================================== -->
+  <div id="single-post">
+    <div class="content-section">        
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+            <div class="video-container">
+						<iframe width="740" height="534" src="https://www.youtube.com/embed/omf7VtTSaY8" frameborder="0" allowfullscreen></iframe>
+          </div>
+						<div class="single-post-heading gap">
+				        	<div class="centered fade-up section-heading">
+				        	     <p>
+ 				                <h1><strong>Configuring Your Computer</strong></h1>
+				                </p>
+				            </div> 
+						</div>
+						<div class="charter">
+						<div class="row gap">
+							<div class="col-md-12 fade-up single-post-content">
+								<br>
+								
+
+							</div>
+						</div>
+						</div>
+					</div>
+							
+	 <div id="single-sidebar" class="col-md-4 col-sm-4 pull-left">
+	<div id="single-sidebar-inner">
+			                
+
+    
+    <div class="widget">
+  <h2 class="widget-title fade-down"><strong>Build Your Own Website</strong></h2>
+  <div class="recent-comment-list">
+  </div>
+  </div>
+
+  <div class="widget">
+  <h2 class="widget-title fade-down"><strong>Tutorial</strong>Steps</h2>
+  <div class="recent-comment-list">
+  <ul class="comment-list fade-up">
+     <div class="commentText">
+    <h4><%= link_to("1. Install Rails", "http://installrails.com/", target: "_blank")%></h4>
+   </div>
+  <div class="commentText">
+    <h4><%= link_to("2. Github", "https://github.com/", target: "_blank")%></h4>
+  </div>
+  <div class="commentText">
+    <h4><%= link_to("3. Sublime Text Editor", "https://www.sublimetext.com/", target: "_blank")%></h4>
+  </div>
+  </li>
+  </li> 
+  </ul>
+<div="spacer-50"> </div>
+     <div="spacer-50"> </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div> 
+<div class="jumbotron text-center">
+  <div class="btn-group btn-group-lg" role="group" aria-label=""></div>
+<%= link_to("Next", "#", class: 'btn btn-default') %> 
+</div>
+  </div>                       
+				                    </div>          
+				                </div>	
+		                	</div>
+	                	</div>
+	                </div>
+                </div>
+			</div>
+		</div>
+		</section>
+
+    </div>
+<script>mixpanel.track("Courses1 Video View"); </script>
+

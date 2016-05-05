@@ -17,4 +17,6 @@ class PagesController < ApplicationController
   end
   def week2 
   end
+  def courses1 
+  end
 end
